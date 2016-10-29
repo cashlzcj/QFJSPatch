@@ -10,15 +10,15 @@
 ###使用步骤
 
 ####服务端
-1. 安装nodejs(自行安装)
+1.安装nodejs(自行安装)
  
-2. 安装sails   
+2.安装sails   
    `npm -g install sails`
          
-3. 安装pm   
+3.安装pm   
    `npm -g install pm2`
    
-4. 启动服务端应用   
+4.启动服务端应用   
     ①生成RSA公钥私钥,参考[http://www.jianshu.com/p/bfa57e049a7e](http://www.jianshu.com/p/bfa57e049a7e)
           
     ②将jspatchserver放在服务端,将第一步得到的私钥命名为`private_key.pem`, 放入jspatchserver/patch/pem目录下
@@ -37,7 +37,7 @@
  =======   
 ####客户端  
 
-1. CocoaPods集成   
+1.CocoaPods集成   
    
 ```ruby
 # Your Podfile
@@ -45,7 +45,7 @@ platform :ios, '6.0'
 pod 'QFJSPatch'
 ```
      
-2. 使用   
+2.使用   
   ①将在服务端使用过程中生成的公钥命名为`public_key.pem`,导入到客户端工程   
   ②在合适的位置引入`#import "QFJSPatch.h"`      
   ③在`didFinishLaunchingWithOptions`中调用`[QFJSPatch execJS];`,   
