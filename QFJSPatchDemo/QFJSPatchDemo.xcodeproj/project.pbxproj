@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46A60DC54D7A1BFA1F3928CD /* libPods-QFJSPatchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B31A128CD3716AA7DCE370E /* libPods-QFJSPatchDemo.a */; };
 		FC87DFBD1DC324F200F2F0BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC87DFBC1DC324F200F2F0BE /* main.m */; };
 		FC87DFC01DC324F200F2F0BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC87DFBF1DC324F200F2F0BE /* AppDelegate.m */; };
 		FC87DFC31DC324F200F2F0BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC87DFC21DC324F200F2F0BE /* ViewController.m */; };
 		FC87DFC61DC324F200F2F0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC87DFC41DC324F200F2F0BE /* Main.storyboard */; };
 		FC87DFC81DC324F200F2F0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC87DFC71DC324F200F2F0BE /* Assets.xcassets */; };
 		FC87DFCB1DC324F200F2F0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC87DFC91DC324F200F2F0BE /* LaunchScreen.storyboard */; };
+		FC9F6DC21DC4A7D100D81A8F /* public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = FC9F6DC11DC4A7D100D81A8F /* public_key.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172B76E9C7F7A8876255CD52 /* Pods-QFJSPatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFJSPatchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFJSPatchDemo/Pods-QFJSPatchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9B31A128CD3716AA7DCE370E /* libPods-QFJSPatchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFJSPatchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55CDC9DEB3D8EB01F425655 /* Pods-QFJSPatchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFJSPatchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QFJSPatchDemo/Pods-QFJSPatchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC87DFB81DC324F200F2F0BE /* QFJSPatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFJSPatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC87DFBC1DC324F200F2F0BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC87DFBE1DC324F200F2F0BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		FC87DFC71DC324F200F2F0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC87DFCA1DC324F200F2F0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC87DFCC1DC324F200F2F0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9F6DC11DC4A7D100D81A8F /* public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A60DC54D7A1BFA1F3928CD /* libPods-QFJSPatchDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8804945982B863317F856E5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C55CDC9DEB3D8EB01F425655 /* Pods-QFJSPatchDemo.debug.xcconfig */,
+				172B76E9C7F7A8876255CD52 /* Pods-QFJSPatchDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3F19E7E5A96F830F26188F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B31A128CD3716AA7DCE370E /* libPods-QFJSPatchDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC87DFAF1DC324F200F2F0BE = {
 			isa = PBXGroup;
 			children = (
 				FC87DFBA1DC324F200F2F0BE /* QFJSPatchDemo */,
 				FC87DFB91DC324F200F2F0BE /* Products */,
+				8804945982B863317F856E5F /* Pods */,
+				C3F19E7E5A96F830F26188F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		FC87DFBA1DC324F200F2F0BE /* QFJSPatchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC9F6DC11DC4A7D100D81A8F /* public_key.pem */,
 				FC87DFBE1DC324F200F2F0BE /* AppDelegate.h */,
 				FC87DFBF1DC324F200F2F0BE /* AppDelegate.m */,
 				FC87DFC11DC324F200F2F0BE /* ViewController.h */,
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC87DFE51DC324F200F2F0BE /* Build configuration list for PBXNativeTarget "QFJSPatchDemo" */;
 			buildPhases = (
+				D033E5C725EE48F1F834B54F /* [CP] Check Pods Manifest.lock */,
 				FC87DFB41DC324F200F2F0BE /* Sources */,
 				FC87DFB51DC324F200F2F0BE /* Frameworks */,
 				FC87DFB61DC324F200F2F0BE /* Resources */,
+				72158DFB12C81351903D9C26 /* [CP] Embed Pods Frameworks */,
+				CC3BF23949E310DA4A3DFD4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,12 +168,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC87DFCB1DC324F200F2F0BE /* LaunchScreen.storyboard in Resources */,
+				FC9F6DC21DC4A7D100D81A8F /* public_key.pem in Resources */,
 				FC87DFC81DC324F200F2F0BE /* Assets.xcassets in Resources */,
 				FC87DFC61DC324F200F2F0BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72158DFB12C81351903D9C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QFJSPatchDemo/Pods-QFJSPatchDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3BF23949E310DA4A3DFD4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QFJSPatchDemo/Pods-QFJSPatchDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D033E5C725EE48F1F834B54F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC87DFB41DC324F200F2F0BE /* Sources */ = {
@@ -218,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -268,6 +347,7 @@
 		};
 		FC87DFE61DC324F200F2F0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55CDC9DEB3D8EB01F425655 /* Pods-QFJSPatchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QFJSPatchDemo/Info.plist;
@@ -279,6 +359,7 @@
 		};
 		FC87DFE71DC324F200F2F0BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172B76E9C7F7A8876255CD52 /* Pods-QFJSPatchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QFJSPatchDemo/Info.plist;
