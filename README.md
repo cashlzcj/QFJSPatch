@@ -37,10 +37,11 @@
  =======   
 ####客户端
 1.CocoaPods集成   
-
-    # Your Podfile
-    platform :ios, '6.0'
-    pod 'QFJSPatch'
+```ruby
+# Your Podfile
+platform :ios, '6.0'
+pod 'QFJSPatch'
+```
     
 2.手动集成
  QFJSPatch目录下的代码导入工程    
