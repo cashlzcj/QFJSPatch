@@ -14,22 +14,15 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.source       = { :git => "https://github.com/cashlzcj/QFJSPatch.git", :tag => s.version }
-
-  #s.source_files  = "QFJSPatch", "QFJSPatch/QFJSPatch/**/*.{h,m}"
-  #s.public_header_files = "QFJSPatch", "QFJSPatch/QFJSPatch/**/*.h"
-
   s.requires_arc = true
   s.frameworks   = "Foundation"
   s.dependency "JSPatch", "~> 1.0"
-  s.dependency "CocoaSecurity", "~> 1.0"
+  s.dependency "CocoaSecurity", "~> 1.2.4"
 
 
   s.subspec 'Core' do |ss|
-    ss.ios.source_files = "JSPatch/*.{h,m}"
-    ss.tvos.source_files = "JSPatch/*.{h,m}"
-    ss.osx.source_files = "JSPatch/*.{h,m}"
-    ss.public_header_files = "JSPatch/*.h"
-    ss.resources    = "JSPatch/*.js"
+    ss.ios.source_files = "QFJSPatch/*.{h,m}"
+    ss.public_header_files = "QFJSPatch/*.h"
   end
 
 end
