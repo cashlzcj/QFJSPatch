@@ -37,6 +37,7 @@
  =======   
 ####客户端
 1.CocoaPods集成   
+   
 ```ruby
 # Your Podfile
 platform :ios, '6.0'
