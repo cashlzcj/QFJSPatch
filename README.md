@@ -36,7 +36,7 @@
       
  =======   
 ####客户端
-1.CocoaPods集成   
+1. CocoaPods集成   
    
 ```ruby
 # Your Podfile
@@ -44,14 +44,12 @@ platform :ios, '6.0'
 pod 'QFJSPatch'
 ```
     
-2.手动集成
+2. 手动集成
  QFJSPatch目录下的代码导入工程    
  
-3.使用   
-  ①将在服务端使用过程中生成的公钥命名为`public_key.pem`,导入到客户端工程     
-  
-  ②在合适的位置引入`#import "QFJSPatch.h"`    
-  
+3. 使用   
+  ①将在服务端使用过程中生成的公钥命名为`public_key.pem`,导入到客户端工程   
+  ②在合适的位置引入`#import "QFJSPatch.h"`      
   ③在`didFinishLaunchingWithOptions`中调用`[QFJSPatch execJS];`,   
   在`applicationDidBecomeActive`或者你认为更合的位置调用`[QFJSPatch requestJSWithUrl:@"test.patch.com:8000/jspatch?" appName:@"TestAPPName"];`    
   
