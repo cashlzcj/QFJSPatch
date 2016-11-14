@@ -47,7 +47,7 @@ pod 'QFJSPatch'
   
   好了,现在你再也不怕线上出BUG了。
 
-<font color=red size=5>注意：iOS10上需要开启Keychain sharing</font>   
+**注意：iOS10上需要开启Keychain sharing**   
 参考[http://stackoverflow.com/questions/38689631/how-to-use-facebook-ios-sdk-on-ios-10/38799196#38799196](http://stackoverflow.com/questions/38689631/how-to-use-facebook-ios-sdk-on-ios-10/38799196#38799196)
 
 =======
